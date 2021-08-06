@@ -1,7 +1,6 @@
 package com.libmta;
 
 import android.util.Log;
-import android.webkit.WebSettings;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -20,18 +19,18 @@ public class UpLoad {
 
     public static UpLoad upLoad = new UpLoad();
 
-    public static LinkedBlockingQueue<Action> actions = new LinkedBlockingQueue<>();
+    public static LinkedBlockingQueue<MtaEvent> mtaEvents = new LinkedBlockingQueue<>();
 
     public void up() {
         new Thread(new Runnable() {
             @Override
             public void run() {
                 for (; ; ) {
-                    Action action = null;
+                    MtaEvent mtaEvent = null;
                     try {
-                        if ((action = actions.take()) != null) {
-                            Log.e(TAG, action.getActionContent());
-                            uploadAction(action);
+                        if ((mtaEvent = mtaEvents.take()) != null) {
+
+                            uploadAction(mtaEvent);
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -42,11 +41,16 @@ public class UpLoad {
         }).start();
     }
 
-    private void uploadAction(Action action) {
+    private void uploadAction(MtaEvent mtaEvent) {
+        String actionContent = mtaEvent.getActionContent();
+        if (actionContent==null){
+            return;
+        }
+        Log.e(TAG, mtaEvent.getActionContent());
         HttpURLConnection httpURLConnection = null;
         OutputStream outputStream = null;
         try {
-            URL url = new URL(Config.baseUrl);
+            URL url = new URL(mtaEvent.getBaseUrl()+mtaEvent.getApi());
             httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestProperty("accept", "*/*");
             httpURLConnection.setRequestProperty("connection", "Keep-Alive");
@@ -54,7 +58,6 @@ public class UpLoad {
             httpURLConnection.setDoOutput(true);
             httpURLConnection.connect();
             outputStream = httpURLConnection.getOutputStream();
-            String actionContent = action.getActionContent();
             outputStream.write(actionContent.getBytes());
             outputStream.flush();
         } catch (MalformedURLException e) {

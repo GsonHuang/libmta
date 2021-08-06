@@ -1,0 +1,4 @@
+app/
+libmta/build
+.gradle
+.idea

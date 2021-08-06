@@ -8,5 +8,13 @@ public class Config {
 
     public static String appid = "";
 
-    public static String baseUrl = "http://service-4j0mkw5i-1255598736.gz.apigw.tencentcs.com/test";
+    public static String baseUrl = "";
+
+    public static String api = "/mta/v2/put";
+
+    public static String density;
+
+    public static String androidId;
+
+    public static String sid;
 }

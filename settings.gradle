@@ -1,3 +1,5 @@
+include ':libProcessor'
+include ':libannotation'
 include ':libmta'
 include ':app'
 rootProject.name = "MtaApplication"
