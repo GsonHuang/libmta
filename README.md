@@ -51,7 +51,7 @@ Actions.ACTION1/Actions.ACTION2/Actions.ACTION3
 后续调用上报的ac值需要是列表中定义的事件ac，否则不会进行上报
 
 ```
-    MTAManager.getInstance().init(this, "A06211951092", "http://service-4j0mkw5i-1255598736.gz.apigw.tencentcs.com/test", new MTAManager.ComfirmAction() {
+    MTAManager.getInstance().init(this, "", "", new MTAManager.ComfirmAction() {
         @Override
         public List<String> setActions() {
             List<String> actions = new ArrayList<>();
