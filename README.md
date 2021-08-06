@@ -5,7 +5,7 @@ mta埋点信息上报Android库
 
 
 ### 依赖使用
-implementation 'com.github.GsonHuang:libmta:v1.0'
+implementation 'com.github.GsonHuang:libmta:v1.0.0'
 
 ---
 
@@ -21,7 +21,7 @@ implementation 'com.github.GsonHuang:libmta:v1.0'
 ```
     MTAManager.getInstance().init(this, "", "");
 ```
-这种使用方式需要配合注解、注解库进行实现。注解库自行下载依赖
+这种使用方式需要配合注解、注解库进行实现。注解库自行下载依赖，地址：https://github.com/GsonHuang/libmta
 项目module中依赖注解库配置
 ```
 api project(path: ':libannotation')
