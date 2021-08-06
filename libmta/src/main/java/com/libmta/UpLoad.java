@@ -2,7 +2,11 @@ package com.libmta;
 
 import android.util.Log;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -60,6 +64,13 @@ public class UpLoad {
             outputStream = httpURLConnection.getOutputStream();
             outputStream.write(actionContent.getBytes());
             outputStream.flush();
+
+            int responseCode = httpURLConnection.getResponseCode();
+            if (responseCode == 200){
+                System.out.println("mtaevent send success event = "+actionContent);
+            }
+
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {

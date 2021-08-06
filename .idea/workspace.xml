@@ -6,55 +6,29 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="===========" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8fc52a9-a262-4821-8c76-ad696578ca83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__auto_common_0_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__auto_service_1_0_rc6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__auto_service_annotations_1_0_rc6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__checker_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__guava_27_0_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javapoet_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/libProcessor/libProcessor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/libannotation/libannotation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/MtaBaseActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/libmta/libmta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/libmta/libmta.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/MtaEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/ActionType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/MTAManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/MTAManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/MtaBaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/MtaBaseActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/UpLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/UpLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libmta/src/main/java/com/libmta/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_26" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="TUKDU18119014590" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -150,7 +124,7 @@
     <property name="project.structure.side.proportion" value="0.27918783" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager" selected="Gradle.MtaApplication:app [build]">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -296,22 +270,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="443" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1627897008345" />
-    <state width="1494" height="94" key="GridCell.Tab.0.bottom" timestamp="1627984705308">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="192" key="GridCell.Tab.0.bottom" timestamp="1628229777467">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229777467" />
     <state width="1494" height="94" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1627984705308" />
-    <state width="1494" height="94" key="GridCell.Tab.0.center" timestamp="1627984705308">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="192" key="GridCell.Tab.0.center" timestamp="1628229777467">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="192" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229777467" />
     <state width="1494" height="94" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1627984705308" />
-    <state width="1494" height="94" key="GridCell.Tab.0.left" timestamp="1627984705308">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="192" key="GridCell.Tab.0.left" timestamp="1628229777467">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="192" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229777467" />
     <state width="1494" height="94" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1627984705308" />
-    <state width="1494" height="94" key="GridCell.Tab.0.right" timestamp="1627984705308">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="192" key="GridCell.Tab.0.right" timestamp="1628229777467">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="192" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229777467" />
     <state width="1494" height="94" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1627984705308" />
+    <state width="1877" height="251" key="GridCell.Tab.1.bottom" timestamp="1628229766590">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229766590" />
+    <state width="1877" height="251" key="GridCell.Tab.1.center" timestamp="1628229766590">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229766590" />
+    <state width="1877" height="251" key="GridCell.Tab.1.left" timestamp="1628229766589">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229766589" />
+    <state width="1877" height="251" key="GridCell.Tab.1.right" timestamp="1628229766590">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1628229766590" />
     <state x="433" y="134" key="RollbackChangesDialog" timestamp="1628063720932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -328,5 +322,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1628216080285" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/libmta/src/main/java/com/libmta/UpLoad.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -71,7 +71,7 @@ public class MTAManager {
         return mTnterval;
     }
 
-    public void setInterval(int intervalSeconds){
+    public void setInterval(int intervalSeconds) {
         mTnterval = intervalSeconds;
     }
 
@@ -92,13 +92,13 @@ public class MTAManager {
 
     public void enterPage(final String path) {
         if (checkInit()) {
-            MtaEvent mtaEvent = makeMtaEvent("PV",path);
+            MtaEvent mtaEvent = makeMtaEvent("PV", path);
             pageUp(mtaEvent);
 
             runnable = new Runnable() {
                 @Override
                 public void run() {
-                    pageUp(makeMtaEvent("HB",path));
+                    pageUp(makeMtaEvent("HB", path));
                     handler.postDelayed(this, getInterval() * 1000);
                 }
             };
@@ -112,7 +112,7 @@ public class MTAManager {
 
     public void leavepPage(String path) {
         if (checkInit()) {
-            pageUp(makeMtaEvent("HB",path));
+            pageUp(makeMtaEvent("HB", path));
             handler.removeCallbacks(runnable);
             runnable = null;
         }
@@ -129,7 +129,7 @@ public class MTAManager {
             mtaEvent.setDpr(Config.density);
             mtaEvent.setUuid(Config.androidId);
             mtaEvent.setSid(Config.sid);
-            mtaEvent.setSign(Utils.getSign(Config.appid,mtaEvent.getAc(),mtaEvent.getTs()+""));
+            mtaEvent.setSign(Utils.getSign(Config.appid, mtaEvent.getAc(), mtaEvent.getTs() + ""));
             mtaEvent.setInterval(mTnterval);
 
             offer2Upload(mtaEvent);
@@ -137,12 +137,18 @@ public class MTAManager {
     }
 
     private void offer2Upload(MtaEvent mtaEvent) {
-        if (mEventActions != null && mEventActions.contains(mtaEvent.getAc())) {
+        if (mEventActions != null) {
+            if (mEventActions.contains(mtaEvent.getAc())) {
+                UpLoad.mtaEvents.offer(mtaEvent);
+            } else {
+                throw new IllegalArgumentException("事件类型ac定义有误，请检查！");
+            }
+        } else {
             UpLoad.mtaEvents.offer(mtaEvent);
         }
     }
 
-    private MtaEvent makeMtaEvent(String ac,String path) {
+    private MtaEvent makeMtaEvent(String ac, String path) {
         MtaEvent mtaEvent = new MtaEvent();
         mtaEvent.setAppid(Config.appid);
         mtaEvent.setBaseUrl(Config.baseUrl);
@@ -150,7 +156,7 @@ public class MTAManager {
         mtaEvent.setDpr(Config.density);
         mtaEvent.setUuid(Config.androidId);
         mtaEvent.setSid(Config.sid);
-        mtaEvent.setDac(mtaEvent.getInterval()+"");
+        mtaEvent.setDac(mtaEvent.getInterval() + "");
         mtaEvent.setAc(ac);
         mtaEvent.setPath(path);
         mtaEvent.setSign(Utils.getSign(Config.appid, ac, mtaEvent.getTs() + ""));
@@ -158,8 +164,6 @@ public class MTAManager {
 
         return mtaEvent;
     }
-
-
 
 
 }

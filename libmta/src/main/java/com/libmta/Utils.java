@@ -41,7 +41,7 @@ public class Utils {
     }
 
     public static String getAndroidId(Context contex) {
-        return contex.getString(Integer.parseInt(Settings.Secure.ANDROID_ID));
+        return Settings.System.getString(contex.getContentResolver(), Settings.Secure.ANDROID_ID);
     }
 
     public static String getSign(String appid, String ac, String ts) {
@@ -52,10 +52,10 @@ public class Utils {
         char[] s = new char[36];
         String hexDigits = "0123456789abcdef";
         for (int i = 0; i < 36; i++) {
-            s[i] = hexDigits.substring((int) Math.floor(Math.random() * 0x10), 1).charAt(0);
+            s[i] = hexDigits.charAt((int) Math.floor(Math.random() * 0x10));
         }
         s[14] = '4';
-        s[19] = hexDigits.substring((s[19] & 0x3) | 0x8, 1).charAt(0);
+        s[19] = hexDigits.charAt((s[19] & 0x3) | 0x8);
         s[8] = s[13] = s[18] = s[23] = '-';
 
         return s.toString();
