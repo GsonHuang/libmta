@@ -15,13 +15,13 @@ public class MtaBaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        MTAManager.getInstance().enterPage(getClass().getSimpleName());
+        MTAManager.getInstance().enterPage(getClass().getSimpleName());
 
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-//        MTAManager.getInstance().leavepPage(getClass().getSimpleName());
+        MTAManager.getInstance().leavepPage(getClass().getSimpleName());
     }
 }
