@@ -14,7 +14,7 @@ implementation 'com.github.GsonHuang:libmta:v1.0.0'
 
 1.初始化
 
-在applicaton oncreate调用init(),初始化初始化有两种方式
+在applicaton oncreate调用init()，初始化有两种方式
 
 
 （1）参数1 上下文context，参数2 appid，参数3 上报url
